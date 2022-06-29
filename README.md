@@ -1,2 +1,4 @@
 # FCPS-LOS22
-Some CTY Computer Science course materials
+
+## Links for Additional Reading
+https://www.quantamagazine.org/mathematicians-discover-the-perfect-way-to-multiply-20190411/
