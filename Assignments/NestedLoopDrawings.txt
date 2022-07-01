@@ -41,7 +41,7 @@ CHALLENGE:
    *
 
 
-Super challenge (radius 20 examples):
+Super challenges (radius 20 examples) (hint: x^2 + y^2 <= r^2):
 5.
                             * * * * * * * * * * * * *                           
                         * * * * * * * * * * * * * * * * *                       
