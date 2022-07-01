@@ -2,9 +2,11 @@ ASSIGNMENT: Write a program that prints out each of the shapes below, using nest
 
 You can use System.out.print("*"); to print a star without going to the next line.
 
+Your code should work for any size. You should have a variable called "size" that will change how big the shape is
+
 Required:
 
-1.
+1. (size 5 example) 
 * * * * *
 * * * * *
 * * * * *
@@ -12,7 +14,7 @@ Required:
 * * * * *
 
 
-2.
+2. (size 5 example)
 *
 **
 ***
@@ -20,7 +22,7 @@ Required:
 *****
 
 
-3.
+3. (size 5 example)
 *****
  ****
   ***
@@ -29,7 +31,7 @@ Required:
 
 
 CHALLENGE:
-4.
+4. (size 4 example)
    *
   * *
  * * *
@@ -39,7 +41,7 @@ CHALLENGE:
    *
 
 
-Super challenge:
+Super challenge (radius 20 examples):
 5.
                             * * * * * * * * * * * * *                           
                         * * * * * * * * * * * * * * * * *                       
