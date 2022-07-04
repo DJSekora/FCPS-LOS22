@@ -10,6 +10,9 @@ https://en.wikipedia.org/wiki/MOSFET (pretty technical, some of it may be too hi
 A Historical Chatbot:
 http://psych.fullerton.edu/mbirnbaum/psych101/Eliza.htm
 
+Random Numbers:
+https://www.random.org/randomness/
+
 Paper Enigma Machine (ask me to print if you want one):
 https://mckoss.com/posts/paper-enigma/
 
