@@ -35,6 +35,7 @@ public class SubstitutionCipher
       // If this is one of the characters we want to encode, do it.
       if(kI < original.length)
       {
+        // ret = ret + encrypted[kI]
         ret.append(encrypted[kI]);
       }
       // Else, copy the character directly
@@ -60,10 +61,23 @@ public class SubstitutionCipher
     String message = "HELLO, WORLD!";
     
     char[] orig = new char[]{'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
-    char[] enc = new char[]{'M','H','T','O','U','A','F','P','R','N','I','G','K','Q','X','D','B','W','V','Y','L','S','J','C','E','Z'};
+    char[] enc  = new char[]{'M','H','T','O','U','A','F','P','R','N','I','G','K','Q','X','D','B','W','V','Y','L','S','J','C','E','Z'};
     String encrypted = encryptSubstitution(message, orig, enc);
     
     System.out.println(encrypted);
     System.out.println(decryptSubstitution(encrypted, orig, enc));
   }
+  
+  /* There are several ways we could make this more efficient:
+  
+     1. If we are only working with capital letters all the time, we could fix
+        the positions of A-Z in slots 0-25 and do away with both the need for
+        the 'original' array and for searching through the whole list to find
+        the current character. Instead, we could use math and ASCII character
+        codes to streamline the process
+        
+     2. We could use a data structure that's faster than an array to search
+        for the target character, such as a hash table (but we haven't learned
+        about those yet!)
+   */
 }
