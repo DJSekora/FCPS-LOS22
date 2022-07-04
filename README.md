@@ -10,6 +10,9 @@ https://en.wikipedia.org/wiki/MOSFET (pretty technical, some of it may be too hi
 A Historical Chatbot:
 http://psych.fullerton.edu/mbirnbaum/psych101/Eliza.htm
 
+Paper Enigma Machine (ask me to print if you want one):
+https://mckoss.com/posts/paper-enigma/
+
 Files and Exceptions in Java:
 https://www.cs.cmu.edu/~mrmiller/15-121/Slides/06-exceptions-files.pdf (a fairly readable university-level slide set with lots of definitions and examples)
 
