@@ -19,5 +19,10 @@ https://www.cs.cmu.edu/~mrmiller/15-121/Slides/06-exceptions-files.pdf (a fairly
 
 
 ## Search Terms of Interest for Enrichment
+(You may need to add "computer science" to the end of some of these)
+
 Ciphers:
 Autokey Cipher, One-Time Pad, RSA encryption
+
+Object-oriented programming:
+Inheritance, Polymorphism
