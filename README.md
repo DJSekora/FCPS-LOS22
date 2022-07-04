@@ -12,3 +12,9 @@ http://psych.fullerton.edu/mbirnbaum/psych101/Eliza.htm
 
 Files and Exceptions in Java:
 https://www.cs.cmu.edu/~mrmiller/15-121/Slides/06-exceptions-files.pdf (a fairly readable university-level slide set with lots of definitions and examples)
+
+
+
+## Search Terms of Interest for Enrichment
+Ciphers:
+Autokey Cipher, One-Time Pad, RSA encryption
