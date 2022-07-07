@@ -40,7 +40,7 @@ public class MyLinkedList
       data = nData;
       next = nextNode;
     }
-  }
+  } // End of Node class
   
   // These are the fields of the linked list itself. There is ONE copy of each
   // of these for the whole list.
@@ -64,6 +64,7 @@ public class MyLinkedList
   
   /* Creates a new node, sets the next reference of the new node to point at
      the old head, then places the new node as the new head.
+     Also increases the length by 1.
    */
   public void addToFront(String data)
   {
@@ -72,7 +73,8 @@ public class MyLinkedList
   
   /* Adding to the end is more complicated, since we don't know where the end
      is. So, we have to start at the head and keep going until we find a node
-     whose next reference is null;
+     whose next reference is null.
+     Also increases the length by 1.
    */
   public void addToEnd(String data)
   {
@@ -88,14 +90,30 @@ public class MyLinkedList
     return null; // PLACEHOLDER FIX THIS
   }
   
-  
+  /* Getting the head is very easy! Can be done in one line. */
   public String getHead()
   {
     return null; // PLACEHOLDER FIX THIS
   }
   
+  /* Getting the tail can be hard or easy, depending on design decisions made. */
   public String getTail()
   {
     return null; // PLACEHOLDER FIX THIS
+  }
+  
+  /* Removes the first item in the list. */
+  public void removeHead()
+  {
+  }
+  
+  /* Removes the last item in the list. */
+  public void removeTail()
+  {
+  }
+  
+  /* Removes the item at the specified index. */
+  public void remove(int index)
+  {
   }
 }
