@@ -68,7 +68,13 @@ public class MyLinkedList
    */
   public void addToFront(String data)
   {
+    Node node = new Node(data, head);
+    head = node;
     
+    // This would also do the same thing as the above 2 lines
+    // head = new Node(data, head);
+    
+    length++;
   }
   
   /* Adding to the end is more complicated, since we don't know where the end
@@ -78,22 +84,57 @@ public class MyLinkedList
    */
   public void addToEnd(String data)
   {
-    
+    // If the list is empty, this should have the same behavior as addToFront.
+    // We could write it out the long way, but this is easier
+    if(size() == 0)
+    {
+      addToFront(data);
+    }
+    else
+    {
+      Node current = head;
+      
+      // When we find null, we found the tail
+      // (we could also use a for loop up to the length)
+      while(current.next != null)
+      {
+        current = current.next;
+      }
+      Node newNode = new Node(data);
+      current.next = newNode;
+      length++;
+    }
   }
   
   /* Retrieves the element at position index in the list.
      Because linked lists have a different structure than array lists, we now
      need a more complicated procedure to access individual elements.
+     Throws an exception when index is negative
    */
   public String get(int index)
   {
-    return null; // PLACEHOLDER FIX THIS
+    if(index < 0)
+    {
+      throw new UnsupportedOperationException("Negative index: " + index);
+    }
+  
+    // Optional: check if index is too big and throw an error
+    // (a NullPointerException will be thrown anyway so not a big deal)
+  
+    Node current = head;
+    
+    for(int i=0; i<index; i++)
+    {
+      current = current.next;
+    }
+  
+    return current.data;
   }
   
   /* Getting the head is very easy! Can be done in one line. */
   public String getHead()
   {
-    return null; // PLACEHOLDER FIX THIS
+    return head.data;
   }
   
   /* Getting the tail can be hard or easy, depending on design decisions made. */
@@ -102,17 +143,27 @@ public class MyLinkedList
     return null; // PLACEHOLDER FIX THIS
   }
   
-  /* Removes the first item in the list. */
+  /* Removes the first item in the list.
+     This is also very easy, just like adding to the head!
+   */
   public void removeHead()
   {
+    // Overwrite the head reference. Now, the node that used to be the head
+    // has no references to it, so it can be claimed by garbage collection.
+    head = head.next;
+    length--; // maintain the length so our size() method works correctly
   }
   
-  /* Removes the last item in the list. */
+  /* Removes the last item in the list.
+     IMPLEMENT THIS!
+   */
   public void removeTail()
   {
   }
   
-  /* Removes the item at the specified index. */
+  /* Removes the item at the specified index.
+     IMPLEMENT THIS!
+   */
   public void remove(int index)
   {
   }
