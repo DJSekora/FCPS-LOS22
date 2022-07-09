@@ -19,7 +19,7 @@ https://mckoss.com/posts/paper-enigma/
 Files and Exceptions in Java:
 https://www.cs.cmu.edu/~mrmiller/15-121/Slides/06-exceptions-files.pdf (a fairly readable university-level slide set with lots of definitions and examples)
 
-The Internet and Advertising
+The Internet and Advertising:
 https://onezero.medium.com/the-ad-based-internet-is-about-to-collapse-what-comes-next-48e31d648a35
 
 
