@@ -24,6 +24,9 @@ https://onezero.medium.com/the-ad-based-internet-is-about-to-collapse-what-comes
 
 (+ several articles linked from that one, such as [a research paper about Google by its founders](http://infolab.stanford.edu/~backrub/google.html) and [an argument for the Internet being a public good despite historically increasing privatization](https://jacobin.com/2016/08/internet-public-dns-privatization-icann-netflix/))
 
+PNG Image Format:
+https://medium.com/@duhroach/how-png-works-f1174e3cc7b7
+
 
 ## Search Terms of Interest for Enrichment
 (You may need to add "computer science" to the end of some of these)
