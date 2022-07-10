@@ -1,4 +1,5 @@
 # FCPS-LOS22
+This repository is used as a file distribution system for the FCPS B class at the LOS CTY site.
 
 ## Links for Additional Reading
 Computer Arithmetic:
