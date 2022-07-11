@@ -17,7 +17,7 @@ public class FontExample extends JPanel
     // Syntax is font name, font style, and font size.
     // (PLAIN, ITALICS, and BOLD are available for font style, see Oracle
     //  documentation for more details,)
-    Font font = new Font("Copperplate", Font.PLAIN, 48);
+    font = new Font("Arial", Font.PLAIN, 48);
   }
 
   public void paintComponent(Graphics g)
@@ -28,6 +28,6 @@ public class FontExample extends JPanel
     // on the screen. You can use different fonts for different Strings in the
     // same image.
     g.setFont(font);
-    g.drawString("This is in Copperplate 48pt", 100, 50);
+    g.drawString("This is in Arial 48pt", 100, 50);
   }
 }

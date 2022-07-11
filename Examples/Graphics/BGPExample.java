@@ -32,7 +32,6 @@ public class BGPExample extends JPanel
        already. We want to run the code from that method first to initialize
        the drawing process - this is precisely what the 'super' keyword does!
      */
-     System.out.println();
     super.paintComponent(g);
     
     // This changes the color for the duration of this method.
