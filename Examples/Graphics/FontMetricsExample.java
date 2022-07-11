@@ -13,8 +13,8 @@ public class FontMetricsExample extends JPanel
   
   public FontMetricsExample()
   {
-    // Showing off bitwise AND for font style
-    font = new Font("Arial", Font.BOLD & Font.ITALIC, 32);
+    // Showing off bitwise OR for font style
+    font = new Font("Arial", Font.BOLD | Font.ITALIC, 32);
   }
 
   public void paintComponent(Graphics g)
