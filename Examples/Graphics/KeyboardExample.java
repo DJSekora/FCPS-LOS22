@@ -43,10 +43,32 @@ public class KeyboardExample extends JPanel implements KeyListener
   }
   
   /* Required methods for KeyListener */
+  
+  /* This one says what to do when the key is 'pressed'. This method triggers
+     once when you first depress the key, and then repeatedly as you continue
+     to hold the key down. The rate is determined by your system - different
+     computers may have different rates.
+   */
   public void keyPressed(KeyEvent e)
   {
+    /* Each key is assigned a unique integer code. Luckily, you don't have to
+       know the codes - they are stored as constants (public static final
+       variables) in the KeyEvent class. For a full list of keys supported,
+       you can consult the oracle documentation for the KeyEvent class.
+       We will be using the arrow keys for our examples, but here is a small
+       list of other useful ones:
+        VK_A, VK_B, VK_C, ..., VK_Z for the letter keys
+        VK_0, VK_1, VK_2, ..., VK_9 for the number keys
+        VK_SPACE for the space bar
+     */
     int code = e.getKeyCode();
     
+    /* Here, we check to see which code we got. In this example, we will
+       update the position of the square appropriately if one of the arrow
+       keys (KeyEvent.VK_RIGHT, KeyEvent.VK_LEFT, etc.) is pressed.
+       Note how we change between sx and sy, and += and -=, depending on
+       which key is pressed.
+     */
     if(code == KeyEvent.VK_RIGHT)
     {
       sx += speed;
@@ -57,19 +79,44 @@ public class KeyboardExample extends JPanel implements KeyListener
     }
     else if(code == KeyEvent.VK_UP)
     {
-      
+      sy -= speed;
     }
     else if(code == KeyEvent.VK_DOWN)
     {
-      
+      sy += speed;
     }
     repaint();
   }
+  
+  /* What to do when a key is released. For this example program, we aren't
+     putting anything in here, although I recommend that you experiment with
+     it - try moving all of the code from the keyPressed method in here
+     instead and see how differently your program controls.
+   */
   public void keyReleased(KeyEvent e)
   {
   }
+  
+  /* What to do when a key is typed - this means when your operating system
+     determines that a Unicode character has been entered. We use a different
+     method here - getKeyChar() instead of getKeyCode().
+     For example, if the A key is pressed, without the shift key being held
+     down or the caps lock being on, then e.getKeyChar() would produce the
+     character 'a'. If the 7 key is pressed with the shift key held, then
+     e.getKeyChar() would produce the character '&'.
+     
+     Generally, unless you want the user to be able to type text, this method
+     is not as useful as the other two, and so we will rarely if ever use it
+     in this example series.
+   */
   public void keyTyped(KeyEvent e)
   {
+    /*char c = e.getKeyChar();
+    if(c == 'a')
+    {
+      sx -= speed;
+    }
+    repaint();*/
   }
 }
 /* Explanation of the implements keyword:

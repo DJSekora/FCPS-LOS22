@@ -13,9 +13,10 @@ public class AnimationExample extends JPanel
   public AnimationExample()
   {
     x = 50;
-    speed = 5;
+    speed = 20;
   }
   
+  /* Update the image and redraw the screen */
   public void mainLoop()
   {
     // Not great style to say while(true), but we'll talk about alternatives
@@ -24,11 +25,11 @@ public class AnimationExample extends JPanel
     {
       try
       {
-        Thread.sleep(50);
+        Thread.sleep(40);
       }catch(Exception e){e.printStackTrace();}
       
       x+=speed;
-      repaint();
+      repaint(); // built-in to JPanel
     }
   }
   
@@ -36,6 +37,7 @@ public class AnimationExample extends JPanel
   {
     super.paintComponent(g);
     
-    g.drawRect(x, 100,50,50);
+    // Make sure something in your paintComponent method is linked to a variable!
+    g.fillRect(x, 50, 50, 50);
   }
 }
