@@ -1,6 +1,4 @@
-/* This class demonstrates how to use the mouse to interact with your JPanel.
-   As always, the specific syntax here is restricted to Java (and, more
-   particularly, the Swing library), but 
+/* Demonstrates how to make a clickable button 
  */
 
 import javax.swing.JPanel;
@@ -11,12 +9,15 @@ import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class MouseExample extends JPanel implements MouseListener
+public class ButtonExample extends JPanel implements MouseListener
 {
-  Color color = Color.BLACK;
+  Button myButton; //NEW
 
-  public MouseExample()
+  public ButtonExample()
   {
+    // left, top, right, bottom
+    myButton = new Button(100, 300, 200, 400); //NEW
+  
     // MouseListener instead of KeyListener
     addMouseListener(this);
     setFocusable(true);
@@ -25,9 +26,8 @@ public class MouseExample extends JPanel implements MouseListener
   public void paintComponent(Graphics g)
   {
     super.paintComponent(g);
-    
-    g.setColor(color);
-    g.fillRect(300,200,200,200);
+
+    myButton.drawTo(g); //NEW
   }
   
   /* Required methods for MouseListener */
@@ -39,19 +39,13 @@ public class MouseExample extends JPanel implements MouseListener
     // BUTTON1 = left click
     if(button == MouseEvent.BUTTON1)
     {
-      color = Color.RED;
+      int x = e.getX();
+      int y = e.getY();
+      if( myButton.clicked(x,y) )
+      {
+        System.out.println("Button was clicked!");
+      }
     }
-    else if(button == MouseEvent.BUTTON2)
-    {
-      color = Color.GREEN;
-    }
-    else if(button == MouseEvent.BUTTON3)
-    {
-      color = Color.BLUE;
-    }
-    
-    System.out.println("x: " + e.getX());
-    System.out.println("y: " + e.getY());
     repaint();
   }
   public void mouseReleased(MouseEvent e)
@@ -66,4 +60,30 @@ public class MouseExample extends JPanel implements MouseListener
   public void mouseExited(MouseEvent e)
   { 
   } 
+}
+
+class Button
+{
+  public int left;
+  public int right;
+  public int top;
+  public int bottom;
+  
+  public Button(int l, int t, int r, int b)
+  {
+    left = l;
+    top = t;
+    right = r;
+    bottom = b;
+  }
+  
+  public void drawTo(Graphics g)
+  {
+    g.fillRect(left, top, right-left, bottom-top);
+  }
+  
+  public boolean clicked(int x, int y)
+  {
+    return x > left && x < right && y > top && y < bottom;
+  }
 }
