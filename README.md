@@ -1,6 +1,9 @@
 # FCPS-LOS22
 This repository is used as a file distribution system for the FCPS B class at the LOS CTY site.
 
+## ZOOM LINK FOR COVID STUDENTS
+https://jhu-cty.zoom.us/j/96497614854?pwd=Y0pPS2FxRXd5d0J6M0xrRnJLRWo1Zz09
+
 ## Links for Additional Reading
 Computer Arithmetic:
 https://www.quantamagazine.org/mathematicians-discover-the-perfect-way-to-multiply-20190411/
