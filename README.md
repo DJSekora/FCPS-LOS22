@@ -4,6 +4,9 @@ This repository is used as a file distribution system for the FCPS B class at th
 ## ZOOM LINK FOR COVID STUDENTS
 https://jhu-cty.zoom.us/j/96497614854?pwd=Y0pPS2FxRXd5d0J6M0xrRnJLRWo1Zz09
 
+## FINAL PROJECT PROPOSAL LINK
+https://docs.google.com/document/d/1UEBP-009ZevmjR5YaLfuNsX7uc_PGnYNr1sjAa6e0lQ/edit?usp=sharing
+
 ## Links for Additional Reading
 Computer Arithmetic:
 https://www.quantamagazine.org/mathematicians-discover-the-perfect-way-to-multiply-20190411/
