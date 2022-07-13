@@ -1,0 +1,12 @@
+// Replace myImage with the name of your BufferedImage
+// Replace 0xffffffff with whatever color value you want to hide (currently white)
+    for(int row=0; row<myImage.getHeight(); row++)
+    {
+      for(int col=0; col<myImage.getWidth(); col++)
+      {
+        if(myImage.getRGB(col, row) == 0xffffffff)
+        {
+          myImage.setRGB(col, row, 0); // 0 means invisible
+        }
+      }
+    }
