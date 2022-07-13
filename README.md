@@ -2,7 +2,7 @@
 This repository is used as a file distribution system for the FCPS B class at the LOS CTY site.
 
 ## ZOOM LINK FOR COVID STUDENTS (CHANGES DAILY)
-EXPIRED (new one coming by thursday morning hopefully sooner)
+https://umd.zoom.us/j/9386830635?pwd=SjRTM0Qwd3NPRnJwaGdBd0xScEE5dz09
 
 ## FINAL PROJECT PROPOSAL LINK
 https://docs.google.com/document/d/1UEBP-009ZevmjR5YaLfuNsX7uc_PGnYNr1sjAa6e0lQ/edit?usp=sharing
