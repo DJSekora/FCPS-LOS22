@@ -1,0 +1,41 @@
+## C-like Languages:
+C
+C++
+C#
+D
+
+## Scripting Languages:
+Python
+Perl
+Ruby
+
+## Historical Languages:
+Algol
+COBOL
+Fortran
+Pascal
+Ada
+
+## Functional Languages:
+Lisp
+Scheme
+ML
+Haskell
+
+## Web Languages:
+HTML
+JavaScript
+PHP
+
+## Math Languages:
+Mathematica
+MATLAB
+R
+
+## Esoteric Languages:
+Chef
+LOLCODE
+Malbolge
+Shakespeare
+Piet
+Brainf**k
