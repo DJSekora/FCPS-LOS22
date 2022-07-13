@@ -2,7 +2,7 @@
 This repository is used as a file distribution system for the FCPS B class at the LOS CTY site.
 
 ## ZOOM LINK FOR COVID STUDENTS (CHANGES DAILY)
-https://jhu-cty.zoom.us/j/91002486249?pwd=OVh5Mmk4cjZLeE5pN1RtOXc3M3pPZz09
+EXPIRED (new one coming by thursday morning hopefully sooner)
 
 ## FINAL PROJECT PROPOSAL LINK
 https://docs.google.com/document/d/1UEBP-009ZevmjR5YaLfuNsX7uc_PGnYNr1sjAa6e0lQ/edit?usp=sharing
