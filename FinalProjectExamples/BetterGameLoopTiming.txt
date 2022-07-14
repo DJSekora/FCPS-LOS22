@@ -1,0 +1,12 @@
+  long nextTick = System.currentTimeMillis();
+  int SKIP_TICKS = 1000/FPS;
+    while(go)
+    {
+      try
+      {
+        Thread.sleep(nextTick - System.currentTimeMillis());
+      } catch(Exception e){e.printStackTrace();}
+      stepGame(); // Advance the game forward one frame
+      nextTick += SKIP_TICKS; // Find the next time we should advance the game forward
+      repaint();
+    }
