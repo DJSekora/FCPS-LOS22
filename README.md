@@ -1,6 +1,9 @@
 # FCPS-LOS22
 This repository is used as a file distribution system for the FCPS B class at the LOS CTY site.
 
+## DISCORD LINK FOR STUDENTS (not staff monitored)
+https://discord.gg/Nz8jqUNT
+
 ## ZOOM LINK FOR COVID STUDENTS (CHANGES DAILY)
 Friday: https://jhu-cty.zoom.us/j/97548205571?pwd=bW5lMXhvVnB0d1QrbnNXRG11QlN0UT09
 
