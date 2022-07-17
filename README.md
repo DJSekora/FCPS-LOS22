@@ -1,14 +1,5 @@
 # FCPS-LOS22
-This repository is used as a file distribution system for the FCPS B class at the LOS CTY site.
-
-## DISCORD LINK FOR STUDENTS (not staff monitored)
-https://discord.gg/Nz8jqUNT
-
-## ZOOM LINK FOR COVID STUDENTS (CHANGES DAILY)
-Friday: https://jhu-cty.zoom.us/j/97548205571?pwd=bW5lMXhvVnB0d1QrbnNXRG11QlN0UT09
-
-## FINAL PROJECT PROPOSAL LINK
-https://docs.google.com/document/d/1UEBP-009ZevmjR5YaLfuNsX7uc_PGnYNr1sjAa6e0lQ/edit?usp=sharing
+This repository was used as a file distribution system for the FCPS B class at the LOS CTY site.
 
 ## Links for Additional Reading
 Computer Arithmetic:
