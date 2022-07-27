@@ -1,4 +1,6 @@
-/* This class is an implementation of an ArrayList, a data structure similar
+/* FILLED-IN INSTRUCTOR GUIDE
+
+   This class is an implementation of an ArrayList, a data structure similar
    to an array but that has several nice features (such as automatic resizing
    to accommodate extra information and an "add" method that adds a piece
    of information to the end of the array).
@@ -8,20 +10,38 @@
  */
 public class MyArrayList
 {
-  // Store the actual data
+  // Store the actual data. For now, we can only use this to store Strings.
   private String[] array;
   
   // How many of the slots are currently filled
+  // Private because we don't want it to be modified anywhere else
   private int length;
   
   // Constructor
-  // tells us how to initialize the data structure
+  // tells us how to initialize the data structure for an empty list
   public MyArrayList()
   {
     // default to 10 slots to start
     array = new String[10];
     
+    // When you first make the array list, there is nothing in it. So, the
+    // length should be 0.
     length = 0;
+  }
+  
+  // Alternate constructor
+  // allows us to convert an existing array into a MyArrayList object
+  // we should copy over each element individually, so don't do this:
+  //     array = inputArray;
+  // That would be bad, because then the array backing this ArrayList might
+  // change without us knowing.
+  public MyArrayList(String[] inputArray)
+  {
+    array = new String[inputArray.length];
+    for(int i=0; i<inputArray.length; i++)
+    {
+      array[i] = inputArray[i];
+    }
   }
   
   /* Retrieves and returns the element at position 'index' */
@@ -71,7 +91,7 @@ public class MyArrayList
     }
   }
   
-  /* Overwrite the String toAdd in the slot index of the array.
+  /* Overwrite the data in slot 'index' of the array.
      Throws an exception if the index is negative or greater than the length
   */
   public void set(int index, String toAdd)
@@ -111,10 +131,21 @@ public class MyArrayList
     length--;
   }
   
-  
-  
-  // Here are two extra methods that were left as challenge problems in class:
-  // (don't look yet if you want to attempt these on your own)
+  /* Add the specified element to the beginning of the list */
+  public void addToFront(String toAdd)
+  {
+    // Make the array bigger if we're at capacity already
+    resizeIfNeeded();
+    
+    // Scoot everything else over
+    for(int i=size(); i>0; i--)
+    {
+      array[i] = array[i-1];
+    }
+    
+    // Add the actual element we wanted to add.
+    array[0] = toAdd;
+  }
   
   /* Remove everything from the list */
   public void removeAll()
@@ -146,7 +177,7 @@ public class MyArrayList
     // make room for the new thing we want to insert.
     // (We have to do this FIRST, otherwise we would forget what was
     //  previously stored in array[index]).
-    for(int i=index+1; i<size(); i++)
+    for(int i=length; i > index; i--)
     {
       array[i] = array[i-1];
     }
